@@ -1,0 +1,20 @@
+@import "../../colors";
+
+div.simple-dropdown  {
+    display: inline-block
+}
+
+.simple-dropdown {
+  background-color: $color-tw-blue-50;
+  color: $color-tw-blue-700;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  select {
+    color: inherit;
+    font: inherit;
+    vertical-align: baseline;
+    border: none;
+    background-color: transparent;
+  }
+}
