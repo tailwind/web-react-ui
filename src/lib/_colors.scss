@@ -1,0 +1,444 @@
+///Colors
+$blue-dark : #5783D7;
+$blue-light : #79A5F9;
+
+$green-dark : #48AA7F;
+$green-light : #6BCCA1;
+
+$red-dark : #8C4D48;
+$red-light : #DE6F6C;
+$badge-notification: #b94a48;
+
+$text-color:#333;
+$lowlight: #F4F4F4;
+
+$fade:#BABABA;
+$dark-fade:darken($fade,10%);
+
+$primary-blue: #0793CA;
+$primary-blue-light: #2C9FD3;
+$primary-blue-lighter: #49ACD9;
+$primary-blue-lightest: #8AC9E6;
+
+$highlight-blue: rgba(22,153,204,0.8);
+$demo-tour-highlight-blue: rgba(22,153,204,0.4);
+$demo-tour-highlight-transparent: rgba(22,153,204,0);
+$header-blue: rgba(0,174,230,0.8);
+$header-blue-full: rgba(0,174,230,1);
+
+$hero-blue: rgb(30, 135, 182);
+
+$gold-shade-old: #FFCA60;
+$gold-shade: #F8BC44;
+$gold-light: #FFE898;
+$gold-highlight: #FDFEC2;
+$gold-highlight-shade: #FFCA60;
+
+$gold-bright-highlight: #FFF9CD;
+$gold-bright-highlight-shade: #FFCA60;
+
+// Hashtag recommendations
+$competitive: #FCAD71;
+$best: #3CB778;
+$good: #64C290;
+$niche: #d4d4d4;
+
+.primary {
+  color:$blue-dark;
+}
+
+.secondary {
+  color:$green-dark;
+}
+
+.alternative {
+  color:$red-light;
+}
+
+$facebook-blue : #1678F2;
+$twitter-blue : #55acee;
+$facebook-page : #FAA150;
+
+$hour-color-00: rgba(0, 0, 12, 0.40);
+$hour-color-01: rgba(51, 50, 53, 0.40);
+$hour-color-02: rgba(65, 65, 67, 0.40);
+$hour-color-03: rgba(87, 87, 95, 0.41);
+$hour-color-04: rgba(131, 131, 144, 0.40);
+$hour-color-05: rgba(111, 113, 170, 0.40);
+$hour-color-06: rgba(112, 114, 171, 0.40);
+$hour-color-07: rgba(133, 131, 190, 0.41);
+$hour-color-08: rgba(183, 156, 235, 0.40);
+$hour-color-09: rgba(176, 189, 234, 0.40);
+$hour-color-10: rgba(148, 223, 255, 0.40);
+$hour-color-11: rgba(103, 209, 251, 0.40);
+$hour-color-12: rgba(56, 163, 209, 0.40);
+$hour-color-13: rgba(36, 111, 168, 0.40);
+$hour-color-14: rgba(58, 93, 142, 0.41);
+$hour-color-15: rgba(91, 121, 131, 0.40);
+$hour-color-16: rgba(157, 166, 113, 0.40);
+$hour-color-17: rgba(233, 188, 147, 0.41);
+$hour-color-18: rgba(178, 99, 57, 0.40);
+$hour-color-19: rgba(183, 73, 15, 0.40);
+$hour-color-20: rgba(138, 59, 18, 0.40);
+$hour-color-21: rgba(89, 35, 11, 0.40);
+$hour-color-22: rgba(75, 29, 6, 0.40);
+$hour-color-23: rgba(42, 12, 0, 0.40);
+
+.hour-color-00 { background:$hour-color-00;}
+.hour-color-01 { background:$hour-color-01;}
+.hour-color-02 { background:$hour-color-02;}
+.hour-color-03 { background:$hour-color-03;}
+.hour-color-04 { background:$hour-color-04;}
+.hour-color-05 { background:$hour-color-05;}
+.hour-color-06 { background:$hour-color-06;}
+.hour-color-07 { background:$hour-color-07;}
+.hour-color-08 { background:$hour-color-08;}
+.hour-color-09 { background:$hour-color-09;}
+.hour-color-10 { background:$hour-color-10;}
+.hour-color-11 { background:$hour-color-11;}
+.hour-color-12 { background:$hour-color-12;}
+.hour-color-13 { background:$hour-color-13;}
+.hour-color-14 { background:$hour-color-14;}
+.hour-color-15 { background:$hour-color-15;}
+.hour-color-16 { background:$hour-color-16;}
+.hour-color-17 { background:$hour-color-17;}
+.hour-color-18 { background:$hour-color-18;}
+.hour-color-19 { background:$hour-color-19;}
+.hour-color-20 { background:$hour-color-20;}
+.hour-color-21 { background:$hour-color-21;}
+.hour-color-22 { background:$hour-color-22;}
+.hour-color-23 { background:$hour-color-23;}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(100%);
+
+  filter: gray;
+}
+
+$instagram_primary: rgba(63, 114, 155, 0.8);
+$instagram_primary_solid: rgba(63, 114, 155, 1);
+$instagram_secondary: rgb(229, 60, 95);
+$pinterest_primary: #BD081C;
+
+$instagram_new_1: #515BD4;
+$instagram_new_2: #8134AF;
+$instagram_new_3: #DD2A7B;
+$instagram_new_4: #FEDA77;
+$instagram_new_5: #F58529;
+
+
+/*
+   Color Palette sorted by type
+   This color palette comprises primary and accent colors that have been designed to work harmoniously
+   with each other. The color palette starts with primary colors (500 level) and fills in the spectrum
+   to create a complete palette of darker and lighter colors that can be used.
+*/
+
+
+/* Base Colors */
+// Tailwind Blue
+$color-tw-blue-700: #005275;
+$color-tw-blue-600: #067BA9;
+$color-tw-blue-500: #0793CA; //base color
+$color-tw-blue-400: #35A7D4;
+$color-tw-blue-300: #64BBDE;
+$color-tw-blue-200: #8FCEE7;
+$color-tw-blue-100: #B9E1F0;
+$color-tw-blue-50:  #E1F2F8;
+
+// Tailwind Green
+$color-honeydew-700: #1F613A;
+$color-honeydew-600: #2F9157;
+$color-honeydew-500: #38A865; //base color
+$color-honeydew-400: #5BB981;
+$color-honeydew-300: #82C99F;
+$color-honeydew-200: #A4D9BA;
+$color-honeydew-100: #C6E6D3;
+$color-honeydew-50:  #E2EEE3;
+
+// Neutrals are composed of greys and whites
+$color-charcoal-700: #222222;
+$color-charcoal-600: #333333;
+$color-charcoal-500: #555555;
+$color-charcoal-400: #808080;
+$color-charcoal-300: #999999;
+$color-charcoal-200: #CDCDCD;
+$color-charcoal-100: #F5F5F5;
+$color-white:       #ffffff;
+
+
+/* Accent Colors
+   Should be used sparingly as accents to main base colors or as provided in designs.
+*/
+// Purple
+$color-grape-700: #1E2D8F;
+$color-grape-600: #3146D3;
+$color-grape-500: #4D5FD9; //base color
+$color-grape-400: #6D7BE0;
+$color-grape-300: #8F9BE7;
+$color-grape-200: #AEB6EE;
+$color-grape-100: #CCD1F4;
+$color-grape-50:  #E9EBFA;
+
+// Orange
+$color-macaroni-700: #8F3E00;
+$color-macaroni-600: #EB6600;
+$color-macaroni-500: #F56A00; //base color
+$color-macaroni-400: #FF892E;
+$color-macaroni-300: #FFA967;
+$color-macaroni-200: #FFC191;
+$color-macaroni-100: #FFD8BA;
+$color-macaroni-50:  #FFEFE2;
+
+// Red
+$color-tangerine-700: #842306;
+$color-tangerine-600: #D93E0E;
+$color-tangerine-500: #F04E1C; //base color
+$color-tangerine-400: #F1663B;
+$color-tangerine-300: #F69070;
+$color-tangerine-200: #F8AE97;
+$color-tangerine-100: #FBCCBE;
+$color-tangerine-50:  #FDE9E3;
+
+// Yellow
+$color-lemon-700: #946A00;
+$color-lemon-600: #EEAA00;
+$color-lemon-500: #FFBB11; //base color
+$color-lemon-400: #FFC73C;
+$color-lemon-300: #FFD56A;
+$color-lemon-200: #FFE193;
+$color-lemon-100: #FFECBB;
+$color-lemon-50:  #FFF6E2;
+
+/* Function Colors */
+$color-success: #3CB778;
+$color-warning: #F0AD4E;
+$color-error: #B94A48;
+$color-info: #3A87AD;
+
+/* Social Media Colors */
+$color-pinterest: #BD081C;
+$color-instagram: #3f729b;
+$color-facebook: #3B5998;
+$color-twitter:  #55ACEE;
+$color-facebook-pages: #FAA150;
+
+
+
+/*
+Background colors
+*/
+.bg-tw-blue-700 { background: $color-tw-blue-700; }
+.bg-tw-blue { background: $color-tw-blue-500; }
+.bg-tw-blue-400 { background: $color-tw-blue-400; }
+.bg-tw-blue-300 { background: $color-tw-blue-300; }
+.bg-tw-blue-100 { background: $color-tw-blue-100; }
+.bg-tw-blue-50 { background: $color-tw-blue-50; }
+.bg-honeydew-700 { background: $color-honeydew-700; }
+.bg-honeydew-600 { background: $color-honeydew-600; }
+.bg-honeydew { background: $color-honeydew-500; }
+.bg-honeydew-300 { background: $color-honeydew-300; }
+.bg-honeydew-100 { background: $color-honeydew-100; }
+.bg-honeydew-50 { background: $color-honeydew-50; }
+.bg-grape-700 { background: $color-grape-700; }
+.bg-grape { background: $color-grape-500; }
+.bg-grape-300 { background: $color-grape-300; }
+.bg-grape-100 { background: $color-grape-100; }
+.bg-macaroni-700 { background: $color-macaroni-700; }
+.bg-macaroni { background: $color-macaroni-500; }
+.bg-macaroni-300 { background: $color-macaroni-300; }
+.bg-macaroni-100 { background: $color-macaroni-100; }
+.bg-tangerine-700 { background: $color-tangerine-700; }
+.bg-tangerine-400 { background: $color-tangerine-400; }
+.bg-tangerine { background: $color-tangerine-500; }
+.bg-tangerine-300 { background: $color-tangerine-300; }
+.bg-tangerine-100 { background: $color-tangerine-100; }
+.bg-tangerine-50  { background: $color-tangerine-50; }
+.bg-charcoal-700 { background: $color-charcoal-700; }
+.bg-charcoal-500 { background: $color-charcoal-500; }
+.bg-charcoal-300 { background: $color-charcoal-300; }
+.bg-charcoal-200 { background: $color-charcoal-200; }
+.bg-charcoal-100 { background: $color-charcoal-100; }
+.bg-white { background: $color-white; }
+
+.bg-success { background: lighten($color-success, 10%); }
+.bg-warning { background: lighten($color-warning, 10%); }
+.bg-error { background: lighten($color-error, 10%); }
+.bg-info { background: lighten($color-info, 10%); }
+
+/* Backgroung Gradient colors */
+.bg-gradient-blue-soft { background: linear-gradient(180deg, $color-tw-blue-50 0%, $color-tw-blue-100 100%); }
+.bg-gradient-tangerine-soft { background: linear-gradient(180deg, $color-tangerine-50 0%, $color-tangerine-100 100%); }
+.bg-gradient-macaroni-soft { background: linear-gradient(180deg, $color-macaroni-50 0%, $color-macaroni-100 100%); }
+.bg-gradient-honeydew-soft { background: linear-gradient(180deg, $color-honeydew-50 0%, $color-honeydew-100 100%); }
+
+/*
+Text colors
+*/
+.text-tw-blue-700 { color: $color-tw-blue-700; }
+.text-tw-blue { color: $color-tw-blue-500; }
+.text-tw-blue-300 { color: $color-tw-blue-300; }
+.text-tw-blue-100 { color: $color-tw-blue-100; }
+.text-honeydew-700 { color: $color-honeydew-700; }
+.text-honeydew { color: $color-honeydew-500; }
+.text-honeydew-300 { color: $color-honeydew-300; }
+.text-honeydew-100 { color: $color-honeydew-100; }
+.text-grape-700 { color: $color-grape-700; }
+.text-grape { color: $color-grape-500; }
+.text-grape-300 { color: $color-grape-300; }
+.text-grape-100 { color: $color-grape-100; }
+.text-macaroni-700 { color: $color-macaroni-700; }
+.text-macaroni { color: $color-macaroni-500; }
+.text-macaroni-300 { color: $color-macaroni-300; }
+.text-macaroni-100 { color: $color-macaroni-100; }
+.text-tangerine-700 { color: $color-tangerine-700; }
+.text-tangerine { color: $color-tangerine-500; }
+.text-tangerine-300 { color: $color-tangerine-300; }
+.text-tangerine-100 { color: $color-tangerine-100; }
+.text-charcoal-700 { color: $color-charcoal-700; }
+.text-charcoal-600 { color: $color-charcoal-600; }
+.text-charcoal-500 { color: $color-charcoal-500; }
+.text-charcoal-400 { color: $color-charcoal-400; }
+.text-charcoal-300 { color: $color-charcoal-300; }
+.text-charcoal-200 { color: $color-charcoal-200; }
+.text-charcoal-100 { color: $color-charcoal-100; }
+.text-white { color: $color-white; }
+
+/*
+Color mixins
+*/
+
+@mixin instagram_gradient_background() {
+  background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+
+@mixin instagram_gradient_background_soft() {
+  background: radial-gradient(circle farthest-corner at -19% 106%, rgb(255, 197, 125) 0%, rgb(255, 180, 0) 10%, rgb(250, 99, 55) 28%, rgb(235, 65, 65) 42%, rgba(0, 0, 0, 0) 142%), linear-gradient(135deg, rgb(35, 75, 215) -58%, rgb(195, 60, 190) 68%);
+}
+
+@mixin instagram_button_background() {
+  background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 197, 125) 0%, rgb(255, 180, 0) 10%, rgb(250, 99, 55) 28%, rgb(235, 65, 65) 42%, rgba(0, 0, 0, 0) 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+
+@mixin instagram_button_background_soft() {
+  background: radial-gradient(circle farthest-corner at -19% 106%, rgb(255, 197, 125) 0%, rgb(255, 180, 0) 10%, rgb(250, 99, 55) 28%, rgb(235, 65, 65) 42%, rgba(0, 0, 0, 0) 142%), linear-gradient(135deg, rgb(35, 75, 215) -58%, rgb(195, 60, 190) 68%);
+
+  &:hover {
+    background: radial-gradient(circle farthest-corner at -19% 106%, rgb(254, 203, 141) 0%, rgb(252, 183, 18) 10%, rgb(254, 111, 70) 28%, rgb(235, 85, 85) 42%, rgba(0, 0, 0, 0) 142%), linear-gradient(135deg, rgb(54, 90, 217) -58%, rgb(196, 75, 192) 68%);
+  }
+}
+
+@mixin instagram_banner_gradient_background() {
+  background: linear-gradient(90deg, $color-honeydew-300 0%, $color-tw-blue-500 100%);
+}
+
+
+@mixin instagram_button_solid_background() {
+  background: rgb(229, 60, 95);
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    background-color: rgb(229, 87, 116);
+  }
+}
+
+@mixin instagram_button_solid_background_light() {
+  background: rgb(229, 87, 116);
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    background-color: rgb(231, 104, 130);
+  }
+}
+
+@mixin pinterest_button_solid_background() {
+  background-color: rgb(189, 8, 28);
+  border-color: rgb(189, 8, 28);
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    background-color: rgb(213, 12, 34) !important;
+    border-color: rgb(210, 31, 31);
+  }
+}
+
+@mixin pinterest_button_solid_background_light() {
+  background-color: rgb(213, 12, 34);
+  border-color: rgb(213, 12, 34);
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    background-color: rgb(233, 14, 38) !important;
+    border-color: rgb(233, 14, 38);
+  }
+}
+
+@mixin pinterest_button_gradient_background_legacy() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(rgb(227, 38, 46), rgb(171, 23, 30));
+  background-color: rgb(171, 23, 30);
+  border-bottom-color: rgb(130, 10, 15);
+  border-left-color: rgb(154, 16, 21);
+  border-right-color: rgb(154, 16, 21);
+  border-top-color: rgb(175, 21, 27);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.11);
+
+  &:hover {
+    background-image: linear-gradient(rgb(230, 61, 68), rgb(193, 26, 34));
+    border: 1px solid rgb(146, 12, 18);
+  }
+}
+
+@mixin pinterest_button_background_soft() {
+  background-color: #EF6666;
+  background: -webkit-linear-gradient(#F87474, #E65858);
+  background: linear-gradient(#F87474, #E65858);
+  border: 1px solid #E34242;
+  border-top-color: #E65858;
+
+  &:hover {
+    border: 1px solid #D21F1F;
+    border-top-color: #E34242;
+  }
+}
+
+@mixin fancy_text_side_border($opacity,$width, $color) {
+  &.fancy {
+    line-height: 0.5;
+    text-align: center;
+    opacity: $opacity;
+    clear: both;
+    padding: 5px;
+
+    span {
+      display: inline-block;
+      position: relative;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        border-bottom: 1px solid $color;
+        top: 0;
+        width: $width;
+      }
+
+      &:before {
+        right: 100%;
+        margin-right: 15px;
+      }
+
+      &:after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
