@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  stories: ['../stories/**/*.stories.js'],
+  stories: ['../src/lib/components/**/*.stories.tsx'],
   addons: [
       '@storybook/addon-actions',
       '@storybook/addon-links',
@@ -18,5 +18,6 @@ module.exports = {
           transpileManager: true,
         },
       },
+      'storybook-addon-react-live-edit/dist/register'
   ],
 };
