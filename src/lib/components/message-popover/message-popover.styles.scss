@@ -1,0 +1,33 @@
+@import "../../colors";
+
+.message-popover {
+  position: absolute;
+  width: 250px;
+  color: #ffffff;
+  background: $color-tw-blue-400;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px;
+  z-index: 9999;
+  transition: opacity 0.3s ease-out;
+  &.hide-message {
+    opacity: 0;
+  }
+  &.show-message {
+    opacity: 1;
+  }
+  .btn-popover {
+    background: $color-tw-blue-700;
+    color: white;
+    font-weight: normal;
+    border: none;
+    padding: 2px 12px;
+    font-size: 12px;
+    margin-top: 12px;
+    border-radius: 4px;
+    &:hover {
+      background: $color-tw-blue-600;
+    }
+  }
+}

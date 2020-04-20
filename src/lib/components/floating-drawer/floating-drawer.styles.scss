@@ -1,0 +1,82 @@
+@import "../../colors";
+.floating-drawer {
+  text-align: left;
+  position: absolute !important;
+
+  .icon-close {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .ant-drawer-content {
+    border-radius: 5px;
+  }
+  &.ant-drawer {
+    .ant-drawer-content-wrapper {
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
+    }
+  }
+
+  // placement classes, can be
+  &.bottom {
+    width: 90%;
+    margin-left: 5%;
+    &.ant-drawer {
+      .ant-drawer-content-wrapper {
+        bottom: -1rem;
+      }
+    }
+    &.ant-drawer-open {
+      .ant-drawer-content-wrapper {
+        bottom: 2rem;
+      }
+    }
+  }
+
+  &.top {
+    width: 90%;
+    margin-left: 5%;
+    &.ant-drawer {
+      .ant-drawer-content-wrapper {
+        top: -1rem;
+      }
+    }
+    &.ant-drawer-open {
+      .ant-drawer-content-wrapper {
+        top: 2rem;
+      }
+    }
+  }
+
+  &.right {
+    height: 90%;
+    margin-top: 1rem;
+    &.ant-drawer {
+      .ant-drawer-content-wrapper {
+        right: -1rem;
+      }
+    }
+    &.ant-drawer-open {
+      .ant-drawer-content-wrapper {
+        right: 2rem;
+      }
+    }
+  }
+
+  &.left {
+    height: 90%;
+    margin-top: 1rem;
+    &.ant-drawer {
+      .ant-drawer-content-wrapper {
+        left: -1rem;
+      }
+    }
+    &.ant-drawer-open {
+      .ant-drawer-content-wrapper {
+        left: 2rem;
+      }
+    }
+  }
+
+}

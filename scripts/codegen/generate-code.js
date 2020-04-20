@@ -228,7 +228,7 @@ class ComponentGenerator {
      * Copy the boilerplate directory to the new component directory.
      */
     copyBoilerplateDirectory () {
-        const source = './codegen/boilerplate';
+        const source = './scripts/codegen/boilerplate';
         const destination = `${this.options.path}`;
         ncp(source, destination, this.renameBoilerplateFiles);
     }

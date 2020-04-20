@@ -1,0 +1,247 @@
+//
+// Base styles
+//
+@import "../../variables";
+@import "../../mixins";
+@import "../../colors";
+
+.btn-bs4 {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  border: $border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
+  @include transition(all .2s ease-in-out);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus();
+    }
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+  &.focus {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    outline: 0;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &:disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    opacity: .65;
+    @include box-shadow(none);
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn-bs4.disaabled,
+fieldset[disabled] a.btn-bs4 {
+  pointer-events: none;
+}
+
+
+//
+// Alternate buttons
+//
+
+.btn-bs4-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.btn-bs4-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+.btn-bs4-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+.btn-bs4-success {
+  @include button-variant($btn-success-color, $color-honeydew-500, $color-honeydew-500);
+}
+.btn-bs4-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+.btn-bs4-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+.btn-bs4-ig {
+  @include button-variant(#fff, $instagram_primary, $instagram_primary);
+}
+.btn-bs4-ig-alt {
+  @include button-variant(#fff, $instagram_secondary, $instagram_secondary);
+}
+.btn-bs4-pinterest {
+  @include button-variant(#fff, $pinterest_primary, $pinterest_primary);
+}
+.btn-bs4-tw {
+  @include button-variant(#fff, $primary-blue, $primary-blue);
+}
+.btn-bs4-tw-honeydew {
+  @include button-variant(#fff, $color-honeydew-500, $color-honeydew-500);
+}
+.btn-bs4-empty {
+  @include button-variant($primary-blue, #fff, $primary-blue);
+}
+.btn-bs4-facebook {
+  @include button-variant(#fff, $facebook-blue, $facebook-blue);
+
+  i.icon-facebook2 {
+    &:before {
+      color: #fff;
+    }
+  }
+}
+.btn-bs4-cancel {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+
+  @include hover {
+    color: $btn-danger-bg;
+    background-image: none;
+    background-color: transparent;
+    border-color: $btn-danger-bg;
+  }
+}
+
+
+// Remove all backgrounds
+.btn-bs4-primary-outline {
+  @include button-outline-variant($btn-primary-bg, #fff);
+}
+.btn-bs4-secondary-outline {
+  @include button-outline-variant($btn-secondary-border, #fff);
+}
+.btn-bs4-info-outline {
+  @include button-outline-variant($btn-info-bg, #fff);
+}
+.btn-bs4-success-outline {
+  @include button-outline-variant($color-honeydew-500, #fff);
+}
+.btn-bs4-warning-outline {
+  @include button-outline-variant($btn-warning-bg, #fff);
+}
+.btn-bs4-danger-outline {
+  @include button-outline-variant($btn-danger-bg, #fff);
+}
+.btn-bs4-ig-outline {
+  @include button-outline-variant($instagram_primary, #fff);
+}
+.btn-bs4-ig-alt-outline {
+  @include button-outline-variant($instagram_secondary, #fff);
+}
+.btn-bs4-pinterest-outline {
+  @include button-outline-variant($pinterest_primary, #fff);
+}
+.btn-bs4-tw-outline {
+  @include button-outline-variant($primary-blue, #fff);
+}
+.btn-bs4-tw-outline-honeydew {
+  @include button-outline-variant($color-honeydew-500, #fff);
+}
+.btn-bs4-clear-outline {
+  @include button-outline-variant(#fff, $primary-blue);
+}
+.btn-bs4-empty-outline {
+  @include button-outline-variant(#999, #fff);
+}
+.btn-bs4-tangerine-outline {
+  @include button-outline-variant($color-tangerine-500, #fff);
+}
+
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-bs4-link {
+  font-weight: normal;
+  color: $link-color;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &:disabled,
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  @include hover {
+    border-color: transparent;
+  }
+  @include hover-focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &:disabled,
+  fieldset[disabled] & {
+    @include hover-focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+//
+// Button Sizes
+//
+
+.btn-bs4-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+}
+.btn-bs4-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+}
+
+.btn-bs4-mini {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-mini, $btn-padding-x-mini, $font-size-xs, $line-height-xs, $btn-border-radius-xs);
+}
+
+
+//
+// Block button
+//
+
+.btn-bs4-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-bs4-block + .btn-bs4-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-bs4-block {
+    width: 100%;
+  }
+}
