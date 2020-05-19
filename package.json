@@ -76,6 +76,9 @@
   },
   "browserify-shim": {},
   "sideEffects": false,
+  "optimization": {
+    "usedExports": true
+  },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "rollup -c rollup.config.ts",
