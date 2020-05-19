@@ -75,6 +75,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "browserify-shim": {},
+  "sideEffects": false,
   "scripts": {
     "start": "node scripts/start.js",
     "build": "rollup -c rollup.config.ts",
