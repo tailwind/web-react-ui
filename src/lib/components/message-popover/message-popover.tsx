@@ -1,5 +1,5 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React, {Component, MouseEventHandler} from 'react';
+import ReactDOM from 'react-dom';
 import './message-popover.styles.scss';
 
 /**
@@ -23,13 +23,13 @@ export interface MessagePopoverProps {
     /**
      * A function to call when the button within the popover is clicked.
      */
-    onBtnClick?: React.MouseEventHandler<HTMLButtonElement>,
+    onBtnClick?: MouseEventHandler<HTMLButtonElement>,
 }
 
 /**
  * The MessagePopover component displays a small popup below the `target` element.
  */
-class MessagePopover extends React.Component<MessagePopoverProps> {
+class MessagePopover extends Component<MessagePopoverProps> {
 
     /**
      * Default properties

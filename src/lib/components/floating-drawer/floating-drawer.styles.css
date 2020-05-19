@@ -1,0 +1,480 @@
+.primary {
+  color: #5783D7;
+}
+
+.secondary {
+  color: #48AA7F;
+}
+
+.alternative {
+  color: #DE6F6C;
+}
+
+.hour-color-00 {
+  background: rgba(0, 0, 12, 0.4);
+}
+
+.hour-color-01 {
+  background: rgba(51, 50, 53, 0.4);
+}
+
+.hour-color-02 {
+  background: rgba(65, 65, 67, 0.4);
+}
+
+.hour-color-03 {
+  background: rgba(87, 87, 95, 0.41);
+}
+
+.hour-color-04 {
+  background: rgba(131, 131, 144, 0.4);
+}
+
+.hour-color-05 {
+  background: rgba(111, 113, 170, 0.4);
+}
+
+.hour-color-06 {
+  background: rgba(112, 114, 171, 0.4);
+}
+
+.hour-color-07 {
+  background: rgba(133, 131, 190, 0.41);
+}
+
+.hour-color-08 {
+  background: rgba(183, 156, 235, 0.4);
+}
+
+.hour-color-09 {
+  background: rgba(176, 189, 234, 0.4);
+}
+
+.hour-color-10 {
+  background: rgba(148, 223, 255, 0.4);
+}
+
+.hour-color-11 {
+  background: rgba(103, 209, 251, 0.4);
+}
+
+.hour-color-12 {
+  background: rgba(56, 163, 209, 0.4);
+}
+
+.hour-color-13 {
+  background: rgba(36, 111, 168, 0.4);
+}
+
+.hour-color-14 {
+  background: rgba(58, 93, 142, 0.41);
+}
+
+.hour-color-15 {
+  background: rgba(91, 121, 131, 0.4);
+}
+
+.hour-color-16 {
+  background: rgba(157, 166, 113, 0.4);
+}
+
+.hour-color-17 {
+  background: rgba(233, 188, 147, 0.41);
+}
+
+.hour-color-18 {
+  background: rgba(178, 99, 57, 0.4);
+}
+
+.hour-color-19 {
+  background: rgba(183, 73, 15, 0.4);
+}
+
+.hour-color-20 {
+  background: rgba(138, 59, 18, 0.4);
+}
+
+.hour-color-21 {
+  background: rgba(89, 35, 11, 0.4);
+}
+
+.hour-color-22 {
+  background: rgba(75, 29, 6, 0.4);
+}
+
+.hour-color-23 {
+  background: rgba(42, 12, 0, 0.4);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+/*
+   Color Palette sorted by type
+   This color palette comprises primary and accent colors that have been designed to work harmoniously
+   with each other. The color palette starts with primary colors (500 level) and fills in the spectrum
+   to create a complete palette of darker and lighter colors that can be used.
+*/
+/* Base Colors */
+/* Accent Colors
+   Should be used sparingly as accents to main base colors or as provided in designs.
+*/
+/* Function Colors */
+/* Social Media Colors */
+/*
+Background colors
+*/
+.bg-tw-blue-700 {
+  background: #005275;
+}
+
+.bg-tw-blue {
+  background: #0793CA;
+}
+
+.bg-tw-blue-400 {
+  background: #35A7D4;
+}
+
+.bg-tw-blue-300 {
+  background: #64BBDE;
+}
+
+.bg-tw-blue-100 {
+  background: #B9E1F0;
+}
+
+.bg-tw-blue-50 {
+  background: #E1F2F8;
+}
+
+.bg-honeydew-700 {
+  background: #1F613A;
+}
+
+.bg-honeydew-600 {
+  background: #2F9157;
+}
+
+.bg-honeydew {
+  background: #38A865;
+}
+
+.bg-honeydew-300 {
+  background: #82C99F;
+}
+
+.bg-honeydew-100 {
+  background: #C6E6D3;
+}
+
+.bg-honeydew-50 {
+  background: #E2EEE3;
+}
+
+.bg-grape-700 {
+  background: #1E2D8F;
+}
+
+.bg-grape {
+  background: #4D5FD9;
+}
+
+.bg-grape-300 {
+  background: #8F9BE7;
+}
+
+.bg-grape-100 {
+  background: #CCD1F4;
+}
+
+.bg-macaroni-700 {
+  background: #8F3E00;
+}
+
+.bg-macaroni {
+  background: #F56A00;
+}
+
+.bg-macaroni-300 {
+  background: #FFA967;
+}
+
+.bg-macaroni-100 {
+  background: #FFD8BA;
+}
+
+.bg-tangerine-700 {
+  background: #842306;
+}
+
+.bg-tangerine-400 {
+  background: #F1663B;
+}
+
+.bg-tangerine {
+  background: #F04E1C;
+}
+
+.bg-tangerine-300 {
+  background: #F69070;
+}
+
+.bg-tangerine-100 {
+  background: #FBCCBE;
+}
+
+.bg-tangerine-50 {
+  background: #FDE9E3;
+}
+
+.bg-charcoal-700 {
+  background: #222222;
+}
+
+.bg-charcoal-500 {
+  background: #555555;
+}
+
+.bg-charcoal-300 {
+  background: #999999;
+}
+
+.bg-charcoal-200 {
+  background: #CDCDCD;
+}
+
+.bg-charcoal-100 {
+  background: #F5F5F5;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-success {
+  background: #5cca92;
+}
+
+.bg-warning {
+  background: #f4c37d;
+}
+
+.bg-error {
+  background: #c76e6d;
+}
+
+.bg-info {
+  background: #54a0c6;
+}
+
+/* Backgroung Gradient colors */
+.bg-gradient-blue-soft {
+  background: linear-gradient(180deg, #E1F2F8 0%, #B9E1F0 100%);
+}
+
+.bg-gradient-tangerine-soft {
+  background: linear-gradient(180deg, #FDE9E3 0%, #FBCCBE 100%);
+}
+
+.bg-gradient-macaroni-soft {
+  background: linear-gradient(180deg, #FFEFE2 0%, #FFD8BA 100%);
+}
+
+.bg-gradient-honeydew-soft {
+  background: linear-gradient(180deg, #E2EEE3 0%, #C6E6D3 100%);
+}
+
+/*
+Text colors
+*/
+.text-tw-blue-700 {
+  color: #005275;
+}
+
+.text-tw-blue {
+  color: #0793CA;
+}
+
+.text-tw-blue-300 {
+  color: #64BBDE;
+}
+
+.text-tw-blue-100 {
+  color: #B9E1F0;
+}
+
+.text-honeydew-700 {
+  color: #1F613A;
+}
+
+.text-honeydew {
+  color: #38A865;
+}
+
+.text-honeydew-300 {
+  color: #82C99F;
+}
+
+.text-honeydew-100 {
+  color: #C6E6D3;
+}
+
+.text-grape-700 {
+  color: #1E2D8F;
+}
+
+.text-grape {
+  color: #4D5FD9;
+}
+
+.text-grape-300 {
+  color: #8F9BE7;
+}
+
+.text-grape-100 {
+  color: #CCD1F4;
+}
+
+.text-macaroni-700 {
+  color: #8F3E00;
+}
+
+.text-macaroni {
+  color: #F56A00;
+}
+
+.text-macaroni-300 {
+  color: #FFA967;
+}
+
+.text-macaroni-100 {
+  color: #FFD8BA;
+}
+
+.text-tangerine-700 {
+  color: #842306;
+}
+
+.text-tangerine {
+  color: #F04E1C;
+}
+
+.text-tangerine-300 {
+  color: #F69070;
+}
+
+.text-tangerine-100 {
+  color: #FBCCBE;
+}
+
+.text-charcoal-700 {
+  color: #222222;
+}
+
+.text-charcoal-600 {
+  color: #333333;
+}
+
+.text-charcoal-500 {
+  color: #555555;
+}
+
+.text-charcoal-400 {
+  color: #808080;
+}
+
+.text-charcoal-300 {
+  color: #999999;
+}
+
+.text-charcoal-200 {
+  color: #CDCDCD;
+}
+
+.text-charcoal-100 {
+  color: #F5F5F5;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+/*
+Color mixins
+*/
+.floating-drawer {
+  text-align: left;
+  position: absolute !important;
+}
+
+.floating-drawer .icon-close {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.floating-drawer .ant-drawer-content {
+  border-radius: 5px;
+}
+
+.floating-drawer.ant-drawer .ant-drawer-content-wrapper {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.floating-drawer.bottom {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.floating-drawer.bottom.ant-drawer .ant-drawer-content-wrapper {
+  bottom: -1rem;
+}
+
+.floating-drawer.bottom.ant-drawer-open .ant-drawer-content-wrapper {
+  bottom: 2rem;
+}
+
+.floating-drawer.top {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.floating-drawer.top.ant-drawer .ant-drawer-content-wrapper {
+  top: -1rem;
+}
+
+.floating-drawer.top.ant-drawer-open .ant-drawer-content-wrapper {
+  top: 2rem;
+}
+
+.floating-drawer.right {
+  height: 90%;
+  margin-top: 1rem;
+}
+
+.floating-drawer.right.ant-drawer .ant-drawer-content-wrapper {
+  right: -1rem;
+}
+
+.floating-drawer.right.ant-drawer-open .ant-drawer-content-wrapper {
+  right: 2rem;
+}
+
+.floating-drawer.left {
+  height: 90%;
+  margin-top: 1rem;
+}
+
+.floating-drawer.left.ant-drawer .ant-drawer-content-wrapper {
+  left: -1rem;
+}
+
+.floating-drawer.left.ant-drawer-open .ant-drawer-content-wrapper {
+  left: 2rem;
+}

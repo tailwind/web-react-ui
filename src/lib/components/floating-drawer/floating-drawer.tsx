@@ -1,9 +1,10 @@
-import * as React from 'react';
-import './floating-drawer.styles.scss';
+import React, {Component, CSSProperties, MouseEvent} from 'react';
 import {Drawer} from "../ant-design";
 import {DrawerProps} from 'antd/es/drawer';
 import 'antd/es/drawer/style/index.css';
 import {omitProps} from "../../utilities";
+
+import './floating-drawer.styles.scss';
 
 /**
  * Type for the getContainer property function that returns an HTMLElement
@@ -32,14 +33,14 @@ interface FloatingDrawerProps extends DrawerProps {
      * Use the `style` property to provide custom styles to the FloatingDrawer component wrapper.
      * This wrapper will have a class of `floating-drawer`.
      */
-    style?: React.CSSProperties;
+    style?: CSSProperties;
     /**
      * The Floating Drawer can be nested inside a container or appended to `body`. If
      * omitted, the drawer will be attached to the `body` and
      */
     getContainer?: string | false | HTMLElement | getContainerFunc;
 
-    closeIconStyle?: React.CSSProperties;
+    closeIconStyle?: CSSProperties;
 }
 
 /**
@@ -51,7 +52,7 @@ interface FloatingDrawerProps extends DrawerProps {
  * We pass these properties directly to the And Design Drawer instance.
  *
  */
-class FloatingDrawer extends React.Component<FloatingDrawerProps> {
+class FloatingDrawer extends Component<FloatingDrawerProps> {
     /**
      * Default properties
      */
@@ -77,7 +78,7 @@ class FloatingDrawer extends React.Component<FloatingDrawerProps> {
     renderCloseIcon () {
         const {onClose, closeIconStyle} = this.props;
         return (
-          <div className={'icon-close'} style={closeIconStyle} onClick={(event: React.MouseEvent<HTMLDivElement>) => {
+          <div className={'icon-close'} style={closeIconStyle} onClick={(event: MouseEvent<HTMLDivElement>) => {
               if (onClose) {
                   onClose(event);
               }

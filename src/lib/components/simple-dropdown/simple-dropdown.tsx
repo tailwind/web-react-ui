@@ -1,5 +1,5 @@
+import React, {ChangeEventHandler, FC, useState, ChangeEvent} from 'react';
 import './simple-dropdown.styles.scss';
-import * as React from 'react';
 
 /**
  * SimpleDropdownProps
@@ -19,23 +19,23 @@ interface SimpleDropdownProps {
     /**
      * Event to fire when the value of the select element changes
      */
-    onChange?: React.ChangeEventHandler<HTMLSelectElement>
+    onChange?: ChangeEventHandler<HTMLSelectElement>
 };
 
 /**
  * A Simple Dropdown Component
  */
-export const SimpleDropdown: React.FC<SimpleDropdownProps> = (
+export const SimpleDropdown: FC<SimpleDropdownProps> = (
     {
         onChange = event => { }, // default value is a no-op
         ...props
     }
 ) => {
     // Use State Hooks
-    const [value, setValue] = React.useState(props.options.length > 0 ? props.options[0] : '');
+    const [value, setValue] = useState(props.options.length > 0 ? props.options[0] : '');
 
     // Handle Change Function
-    const handleChange: React.ChangeEventHandler<HTMLSelectElement> = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const handleChange: ChangeEventHandler<HTMLSelectElement> = (event: ChangeEvent<HTMLSelectElement>) => {
         setValue(event.target.value);
         onChange(event);
     };

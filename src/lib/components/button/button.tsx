@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {ButtonHTMLAttributes, Component, DetailedHTMLProps, MouseEvent} from 'react';
 import './button.styles.scss';
 
 /**
@@ -22,7 +22,7 @@ interface ButtonOptionalProps {
     /**
      * The action to take when the button is clicked
      */
-    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void,
+    onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void,
     /**
      * Any html props to pass to the `button` element
      */
@@ -34,7 +34,7 @@ interface ButtonOptionalProps {
  *
  * You can also pass any html props for the underlying `button` element.
  */
-class Button extends React.Component<ButtonOptionalProps> {
+class Button extends Component<ButtonOptionalProps> {
     public static defaultProps: Partial<ButtonOptionalProps> = {
         size: 'regular',
         variant: 'solid',
@@ -95,7 +95,7 @@ class Button extends React.Component<ButtonOptionalProps> {
      */
     render() {
         const {children, className = ''} = this.props;
-        const buttonProps = this.getButtonProps();
+        const buttonProps = this.getButtonProps() as DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
         return (
             <button
