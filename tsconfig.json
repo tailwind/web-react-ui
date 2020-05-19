@@ -21,5 +21,9 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "src/lib/components/**/*.stories.tsx",
+    "src/lib/components/**/*.test.tsx"
   ]
 }

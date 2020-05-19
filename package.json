@@ -1,10 +1,10 @@
 {
-  "name": "@tailwindapp/web-ui-ejected",
-  "main": "dist/js/index.js",
-  "module": "dist/js/index.js",
-  "types": "dist/js/index.d.ts",
+  "name": "@tailwindapp/web-react-ui",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -77,7 +77,7 @@
   "browserify-shim": {},
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "rollup -c rollup.config.ts",
     "test": "node scripts/test.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -109,22 +109,18 @@
   },
   "babel": {
     "presets": [
-      ["@babel/preset-env", {
-        "useBuiltIns": "entry",
-        "corejs": "2.0.0"
-      }],
-      "@babel/preset-react",
-      "@babel/preset-typescript"
+      "@babel/react"
     ],
-    "sourceMaps": "inline",
-    "retainLines": true,
-    "ignore": ["**/__snapshots__", "**/*.d.ts", "**/*.test.*"],
+    "ignore": [
+      "**/__snapshots__",
+      "**/*.d.ts",
+      "**/*.test.*"
+    ],
     "plugins": [
-      "@babel/plugin-proposal-class-properties",
-      ["import", { "libraryName": "antd", "style": "css" }],
       "@babel/plugin-transform-typescript",
       "babel-plugin-typescript-to-proptypes",
       "@babel/plugin-proposal-export-default-from",
+      "@babel/proposal-class-properties",
       "@babel/proposal-object-rest-spread"
     ]
   },
@@ -178,26 +174,12 @@
       "jest-watch-typeahead/testname"
     ]
   },
-  "babel": {
-    "presets": [
-      "@babel/react"
-    ],
-    "ignore": [
-      "**/__snapshots__",
-      "**/*.d.ts",
-      "**/*.test.*"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-typescript",
-      "babel-plugin-typescript-to-proptypes",
-      "@babel/plugin-proposal-export-default-from",
-      "@babel/proposal-class-properties",
-      "@babel/proposal-object-rest-spread"
-    ]
-  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-json": "^4.0.3",
+    "@rollup/plugin-node-resolve": "^7.1.3",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
@@ -221,6 +203,9 @@
     "react-docgen-typescript-loader": "^3.7.2",
     "react-element-to-jsx-string": "^14.3.1",
     "replace-in-file": "^5.0.2",
+    "rollup": "^2.10.4",
+    "rollup-plugin-scss": "^2.5.0",
+    "rollup-plugin-typescript2": "^0.27.1",
     "sass-loader": "^8.0.2",
     "storybook-addon-react-live-edit": "^2.0.4",
     "style-loader": "^0.23.1",
