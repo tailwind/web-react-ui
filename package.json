@@ -75,7 +75,10 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "browserify-shim": {},
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
   "optimization": {
     "usedExports": true
   },
