@@ -5,15 +5,13 @@ import scss from "rollup-plugin-scss";
 import json from "@rollup/plugin-json";
 import pkg from "./package.json";
 
-const fs = require("fs");
-
 export default {
     input: "src/lib/index.ts",
     output: [
-        {
-            file: pkg.main,
-            format: "cjs",
-        },
+        // {
+        //     file: pkg.main,
+        //     format: "cjs",
+        // },
         {
             file: pkg.module,
             format: "es",
