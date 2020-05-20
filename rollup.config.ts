@@ -20,7 +20,8 @@ export default {
     external: [
         "react",
         "moment",
-        "moment-timezone"
+        "moment-timezone",
+        "antd"
     ],
     plugins: [
         resolve(),
