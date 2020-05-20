@@ -3,7 +3,7 @@
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types",
-  "version": "0.1.10",
+  "version": "0.1.9",
   "private": false,
   "dependencies": {
     "@babel/core": "7.9.0",
@@ -93,7 +93,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "codegen": "node scripts/codegen/generate-code.js",
-    "build:lib": "npm run build:babel && npm run build:types && node ./scripts/copy-declaration-files.js",
+    "build:lib": "npm run build:babel && npm run build:types && node ./scripts/copy-declaration-files.js && node ./scripts/compile-scss-files.js",
     "build:babel": "concurrently \"npm run build:babel:esm && npm run build:babel:umd\" \"npm run build:babel:cjs\"",
     "build:babel:cjs": "BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src/lib --out-dir dist/js --presets=@babel/env",
     "build:babel:esm": "BABEL_ENV=esm babel --source-maps --extensions \".js,.ts,.tsx\" src/lib --out-dir dist/esm",
