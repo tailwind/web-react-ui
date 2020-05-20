@@ -3,7 +3,7 @@
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "dependencies": {
     "@babel/core": "7.9.0",
