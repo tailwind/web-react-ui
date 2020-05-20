@@ -80,7 +80,11 @@
     "**/*.scss"
   ],
   "optimization": {
-    "usedExports": true
+    "usedExports": true,
+    "sideEffects": [
+      "**/*.css",
+      "**/*.scss"
+    ]
   },
   "scripts": {
     "start": "node scripts/start.js",
