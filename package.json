@@ -209,7 +209,7 @@
     "inquirer-fuzzy-path": "^2.2.0",
     "line-replace": "^1.0.3",
     "ncp": "^2.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-element-to-jsx-string": "^14.3.1",
     "replace-in-file": "^5.0.2",
